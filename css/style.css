@@ -12,10 +12,13 @@ body {
     padding: 30px;
 }
 
-.tab-content {
-    max-width: 900px;
+main {
+    max-width: 800px;
     margin: 0 auto;
-    padding: 60px;
+    padding: 40px;
+}
+
+.tab-content {
     display: none;
 }
 
