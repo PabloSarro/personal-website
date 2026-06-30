@@ -4,7 +4,7 @@ body {
     font-weight: 200;
     background-color: #1e1e1e;
     color: #e0e0e0;
-    /* line-height: 1.6; */
+    line-height: 1.4;
 }
 
 /* Content */
@@ -13,7 +13,7 @@ body {
 }
 
 main {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 40px;
 }
@@ -38,7 +38,7 @@ main {
 }
 
 .about-image img {
-    width: 270px;
+    width: 300px;
     height: auto;
     border-radius: 12px;
 }
