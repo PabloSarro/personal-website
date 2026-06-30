@@ -7,6 +7,22 @@ body {
     /* line-height: 1.6; */
 }
 
+/* Content */
+.content {
+    padding: 30px;
+}
+
+.tab-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 60px;
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
 /* Image Control */
 .about-container {
     display: flex;
@@ -19,7 +35,7 @@ body {
 }
 
 .about-image img {
-    width: 220px;
+    width: 270px;
     height: auto;
     border-radius: 12px;
 }
@@ -41,17 +57,4 @@ body {
 
 .tab:hover {
     color: white;
-}
-
-/* Content */
-.content {
-    padding: 30px;
-}
-
-.tab-content {
-    display: none;
-}
-
-.tab-content.active {
-    display: block;
 }
