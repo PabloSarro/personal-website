@@ -1,4 +1,40 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 40px;
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    font-weight: 200;
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    /* line-height: 1.6; */
+}
+
+/* Navigation bar */
+.navbar {
+    display: flex;
+    gap: 20px;
+    padding: 15px 20px;
+    background-color: #2a2a2a;
+    border-bottom: 1px solid #3a3a3a;
+}
+
+.tab {
+    cursor: pointer;
+    color: #cfcfcf;
+    padding: 5px 10px;
+}
+
+.tab:hover {
+    color: white;
+}
+
+/* Content */
+.content {
+    padding: 30px;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
 }
