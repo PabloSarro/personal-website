@@ -2,29 +2,54 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pablo Sarro Sánchez</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Pablo Sarró Sánchez</title>
+    <meta name="description" content="Personal website of Pablo Sarró Sánchez — MSc student in Computational Science and Engineering at EPFL, with a background in Mathematical and Physical Engineering.">
+
+    <!-- Social preview -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Pablo Sarró Sánchez">
+    <meta property="og:description" content="MSc student in Computational Science and Engineering at EPFL. Projects, experience, prizes and contact.">
+    <meta property="og:url" content="https://pablosarrosanchez.com">
+    <meta property="og:image" content="https://pablosarrosanchez.com/images/Pablo_Resized.jpg">
+    <meta name="twitter:card" content="summary">
+
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231e1e1e'/%3E%3Ctext x='32' y='42' font-family='Arial, sans-serif' font-size='28' font-weight='600' fill='%235b9dff' text-anchor='middle'%3EPS%3C/text%3E%3C/svg%3E">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <nav class="navbar">
-        <div class="tab" onclick="showTab('about')">About</div>
-        <div class="tab" onclick="showTab('projects')">Projects</div>
-        <div class="tab" onclick="showTab('cv')">CV</div>
-        <div class="tab" onclick="showTab('prizes')">Prizes</div>
-        <div class="tab" onclick="showTab('contact')">Contact</div>
-    </nav>
+    <a class="skip-link" href="#main-content">Skip to content</a>
 
-    <main class="content">
+    <header class="navbar">
+        <div class="navbar-inner">
+            <span class="brand">Pablo Sarró Sánchez</span>
+            <nav class="tabs" role="tablist" aria-label="Site sections">
+                <button class="tab" role="tab" data-tab="about" id="tab-about" aria-controls="about" aria-selected="true">About</button>
+                <button class="tab" role="tab" data-tab="experience" id="tab-experience" aria-controls="experience" aria-selected="false">Experience</button>
+                <button class="tab" role="tab" data-tab="projects" id="tab-projects" aria-controls="projects" aria-selected="false">Projects</button>
+                <button class="tab" role="tab" data-tab="prizes" id="tab-prizes" aria-controls="prizes" aria-selected="false">Prizes</button>
+                <button class="tab" role="tab" data-tab="cv" id="tab-cv" aria-controls="cv" aria-selected="false">CV</button>
+                <button class="tab" role="tab" data-tab="contact" id="tab-contact" aria-controls="contact" aria-selected="false">Contact</button>
+            </nav>
+        </div>
+    </header>
 
-        <section id="about" class="tab-content active">
+    <main class="content" id="main-content">
+
+        <!-- ABOUT -->
+        <section id="about" class="tab-content active" role="tabpanel" aria-labelledby="tab-about" tabindex="0">
             <div class="about-container">
 
                 <div class="about-text">
                     <h1>Pablo Sarró Sánchez</h1>
+                    <p class="subtitle">MSc Student in Computational Science and Engineering, EPFL</p>
 
                     <p><strong>Background</strong><br>
                     Hello! I am Pablo Sarró Sánchez, a Spanish student currently studying an MSc in Computational Science and Engineering at EPFL. I hold a BSc in Mathematical and Physical Engineering from URV, during which I spent my final year on an Exchange program at Vrije Universiteit Amsterdam (VU Amsterdam).</p>
@@ -38,43 +63,222 @@
                     <p><strong>Personal Interests</strong><br>
                     I personally enjoy playing padel and running, which I do on a daily basis, as well as playing the piano and observing satellites in the night sky.
                     Feel free to explore the other sections of this website to learn more.</p>
+
+                    <div class="social-row">
+                        <a class="icon-link" href="https://github.com/PabloSarro" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+                            <svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+                            <span>GitHub</span>
+                        </a>
+                        <a class="icon-link" href="mailto:sarropablo06@gmail.com" aria-label="Send an email">
+                            <svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M1.5 3h13A1.5 1.5 0 0 1 16 4.5v7A1.5 1.5 0 0 1 14.5 13h-13A1.5 1.5 0 0 1 0 11.5v-7A1.5 1.5 0 0 1 1.5 3Zm.4 1 5.2 3.9a1.5 1.5 0 0 0 1.8 0L14.1 4H1.9ZM1 5.1v6.4c0 .28.22.5.5.5h13a.5.5 0 0 0 .5-.5V5.1L8.5 8.9a2.5 2.5 0 0 1-3 0L1 5.1Z"/></svg>
+                            <span>Email</span>
+                        </a>
+                    </div>
                 </div>
 
                 <div class="about-image">
-                    <img src="images/Pablo_Resized.jpg" alt="Profile photo">
+                    <img src="images/Pablo_Resized.jpg" alt="Profile photo of Pablo Sarró Sánchez">
                 </div>
 
             </div>
         </section>
 
-        <section id="projects" class="tab-content">
+        <!-- EXPERIENCE -->
+        <section id="experience" class="tab-content" role="tabpanel" aria-labelledby="tab-experience" tabindex="0">
+            <h1>Experience</h1>
+            <p class="section-intro">My academic background and the roles I've taken on alongside it.</p>
+
+            <h2 class="group-title">Education</h2>
+            <ul class="timeline">
+                <li class="timeline-item">
+                    <div class="timeline-marker" aria-hidden="true"></div>
+                    <div class="timeline-body">
+                        <h3>MSc in Computational Science and Engineering</h3>
+                        <p class="timeline-meta">EPFL (École Polytechnique Fédérale de Lausanne) &middot; Ongoing</p>
+                        <p>Focused on using mathematical models to perform efficient simulations in scientific computing, with a particular interest in high-performance, parallel and concurrent computing.</p>
+                    </div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-marker" aria-hidden="true"></div>
+                    <div class="timeline-body">
+                        <h3>Exchange Year</h3>
+                        <p class="timeline-meta">Vrije Universiteit Amsterdam (VU Amsterdam)</p>
+                        <p>Completed the final year of the Bachelor's degree abroad, broadening my exposure to different teaching approaches in mathematics and physics.</p>
+                    </div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-marker" aria-hidden="true"></div>
+                    <div class="timeline-body">
+                        <h3>BSc in Mathematical and Physical Engineering</h3>
+                        <p class="timeline-meta">Universitat Rovira i Virgili (URV)</p>
+                        <p>Built a solid foundation in mathematics and physics, and how mathematical tools are used to model physical systems.</p>
+                    </div>
+                </li>
+            </ul>
+
+            <h2 class="group-title">Roles &amp; Leadership</h2>
+            <ul class="timeline">
+                <li class="timeline-item">
+                    <div class="timeline-marker" aria-hidden="true"></div>
+                    <div class="timeline-body">
+                        <h3>Vice-President</h3>
+                        <p class="timeline-meta">EPFL Spacecraft Team &middot; Current</p>
+                        <p>Overseeing team direction alongside the President, and supporting coordination across the team's technical and operational branches.</p>
+                    </div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-marker" aria-hidden="true"></div>
+                    <div class="timeline-body">
+                        <h3>Head of Operations</h3>
+                        <p class="timeline-meta">EPFL Spacecraft Team &middot; Current</p>
+                        <p>Coordinating day-to-day operations and working directly with ESA experts and technical engineers from diverse fields.</p>
+                    </div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-marker" aria-hidden="true"></div>
+                    <div class="timeline-body">
+                        <h3>Treasurer</h3>
+                        <p class="timeline-meta">EPFL Spacecraft Team &middot; Current</p>
+                        <p>Managing the team's budget and financial planning.</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects" class="tab-content" role="tabpanel" aria-labelledby="tab-projects" tabindex="0">
             <h1>Projects</h1>
-            <p>List of projects under development.</p>
+            <p class="section-intro">
+                A selection of projects. Each one links to its code repository and a short written report.
+                <!-- TODO: These three projects are placeholders — replace titles, descriptions, GitHub links
+                     and report PDFs (in /reports) with your real projects before this goes live. -->
+            </p>
+
+            <div class="project-grid">
+
+                <article class="project-card">
+                    <h2>Parallel N-Body Gravitational Simulator</h2>
+                    <p>A C++/MPI implementation of the Barnes–Hut algorithm for simulating gravitational interactions between thousands of bodies, benchmarked on an HPC cluster to evaluate scaling efficiency across multiple nodes.</p>
+                    <ul class="tag-list">
+                        <li class="tag">C++</li>
+                        <li class="tag">MPI</li>
+                        <li class="tag">HPC</li>
+                        <li class="tag">Numerical Methods</li>
+                    </ul>
+                    <div class="project-links">
+                        <a class="btn btn-outline" href="https://github.com/PabloSarro" target="_blank" rel="noopener noreferrer">
+                            <svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+                            Code
+                        </a>
+                        <a class="btn btn-solid" href="reports/nbody-simulator.pdf" target="_blank" rel="noopener noreferrer">
+                            <svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 11.5 4 7.5l.7-.7L8 10.1l3.3-3.3.7.7-4 4ZM3.5 13a.5.5 0 0 1 0-1h9a.5.5 0 0 1 0 1h-9ZM7.5 9V1h1v8h-1Z"/></svg>
+                            Report (PDF)
+                        </a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <h2>CubeSat Attitude Determination &amp; Control</h2>
+                    <p>Simulation and analysis of attitude determination and control strategies for a 3U CubeSat, developed as part of my work with the EPFL Spacecraft Team, combining sensor modelling with control-loop design.</p>
+                    <ul class="tag-list">
+                        <li class="tag">Python</li>
+                        <li class="tag">Control Systems</li>
+                        <li class="tag">Aerospace</li>
+                    </ul>
+                    <div class="project-links">
+                        <a class="btn btn-outline" href="https://github.com/PabloSarro" target="_blank" rel="noopener noreferrer">
+                            <svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+                            Code
+                        </a>
+                        <a class="btn btn-solid" href="reports/cubesat-adcs.pdf" target="_blank" rel="noopener noreferrer">
+                            <svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 11.5 4 7.5l.7-.7L8 10.1l3.3-3.3.7.7-4 4ZM3.5 13a.5.5 0 0 1 0-1h9a.5.5 0 0 1 0 1h-9ZM7.5 9V1h1v8h-1Z"/></svg>
+                            Report (PDF)
+                        </a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <h2>Physics-Informed Neural Network for PDE Solving</h2>
+                    <p>An exploration of physics-informed neural networks (PINNs) applied to solving partial differential equations, comparing convergence and accuracy against traditional finite-element solvers.</p>
+                    <ul class="tag-list">
+                        <li class="tag">Python</li>
+                        <li class="tag">PyTorch</li>
+                        <li class="tag">Machine Learning</li>
+                        <li class="tag">PDEs</li>
+                    </ul>
+                    <div class="project-links">
+                        <a class="btn btn-outline" href="https://github.com/PabloSarro" target="_blank" rel="noopener noreferrer">
+                            <svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+                            Code
+                        </a>
+                        <a class="btn btn-solid" href="reports/pinn-pde-solver.pdf" target="_blank" rel="noopener noreferrer">
+                            <svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 11.5 4 7.5l.7-.7L8 10.1l3.3-3.3.7.7-4 4ZM3.5 13a.5.5 0 0 1 0-1h9a.5.5 0 0 1 0 1h-9ZM7.5 9V1h1v8h-1Z"/></svg>
+                            Report (PDF)
+                        </a>
+                    </div>
+                </article>
+
+            </div>
         </section>
 
-        <section id="cv" class="tab-content">
+        <!-- PRIZES -->
+        <section id="prizes" class="tab-content" role="tabpanel" aria-labelledby="tab-prizes" tabindex="0">
+            <h1>Prizes &amp; Distinctions</h1>
+            <ul class="prize-list">
+                <li class="prize-item">
+                    <svg class="prize-icon" viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0 9.8 5h5.2l-4.2 3.1L12.6 13 8 9.9 3.4 13l1.8-4.9L1 5h5.2L8 0Z"/></svg>
+                    <span>Extraordinary High-School Award</span>
+                </li>
+                <li class="prize-item">
+                    <svg class="prize-icon" viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0 9.8 5h5.2l-4.2 3.1L12.6 13 8 9.9 3.4 13l1.8-4.9L1 5h5.2L8 0Z"/></svg>
+                    <span>PAU Distinction</span>
+                </li>
+                <li class="prize-item">
+                    <svg class="prize-icon" viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0 9.8 5h5.2l-4.2 3.1L12.6 13 8 9.9 3.4 13l1.8-4.9L1 5h5.2L8 0Z"/></svg>
+                    <span>Honours (courses)</span>
+                </li>
+                <li class="prize-item">
+                    <svg class="prize-icon" viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0 9.8 5h5.2l-4.2 3.1L12.6 13 8 9.9 3.4 13l1.8-4.9L1 5h5.2L8 0Z"/></svg>
+                    <span>Best Bachelor's Thesis</span>
+                </li>
+                <li class="prize-item">
+                    <svg class="prize-icon" viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0 9.8 5h5.2l-4.2 3.1L12.6 13 8 9.9 3.4 13l1.8-4.9L1 5h5.2L8 0Z"/></svg>
+                    <span>Best Academic Curriculum</span>
+                </li>
+            </ul>
+        </section>
+
+        <!-- CV -->
+        <section id="cv" class="tab-content" role="tabpanel" aria-labelledby="tab-cv" tabindex="0">
             <h1>CV</h1>
-            <p>CV section under development.</p>
+            <p>My full CV is available on request. Send me an email and I'll be happy to share it with you.</p>
+            <a class="btn btn-solid" href="mailto:sarropablo06@gmail.com?subject=CV%20Request">
+                <svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M1.5 3h13A1.5 1.5 0 0 1 16 4.5v7A1.5 1.5 0 0 1 14.5 13h-13A1.5 1.5 0 0 1 0 11.5v-7A1.5 1.5 0 0 1 1.5 3Zm.4 1 5.2 3.9a1.5 1.5 0 0 0 1.8 0L14.1 4H1.9ZM1 5.1v6.4c0 .28.22.5.5.5h13a.5.5 0 0 0 .5-.5V5.1L8.5 8.9a2.5 2.5 0 0 1-3 0L1 5.1Z"/></svg>
+                Request my CV
+            </a>
         </section>
 
-        <section id="prizes" class="tab-content">
-            <h1>Prizes</h1>
-            <p>Prizes section under development.</p>
-            <!-- <p>Extraordinary High-School Award.</p>
-            <p>PAU Distinction.</p>
-            <p>Honours (courses).</p>
-            <p>Best Bachelor's Thesis.</p>
-            <p>Best Academic Curriculum.</p> -->
-        </section>
-
-        <section id="contact" class="tab-content">
+        <!-- CONTACT -->
+        <section id="contact" class="tab-content" role="tabpanel" aria-labelledby="tab-contact" tabindex="0">
             <h1>Contact</h1>
-            <p> Contact section under development.</p>
-            <!-- <p>Email: sarropablo06@gmail.com</p>
-            <p>GitHub: https://github.com/PabloSarro</p> -->
+            <p>Feel free to reach out for collaborations, questions, or just to say hi.</p>
+            <ul class="contact-list">
+                <li>
+                    <svg class="prize-icon" viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M1.5 3h13A1.5 1.5 0 0 1 16 4.5v7A1.5 1.5 0 0 1 14.5 13h-13A1.5 1.5 0 0 1 0 11.5v-7A1.5 1.5 0 0 1 1.5 3Zm.4 1 5.2 3.9a1.5 1.5 0 0 0 1.8 0L14.1 4H1.9ZM1 5.1v6.4c0 .28.22.5.5.5h13a.5.5 0 0 0 .5-.5V5.1L8.5 8.9a2.5 2.5 0 0 1-3 0L1 5.1Z"/></svg>
+                    <span>Email: <a href="mailto:sarropablo06@gmail.com">sarropablo06@gmail.com</a></span>
+                </li>
+                <li>
+                    <svg class="prize-icon" viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+                    <span>GitHub: <a href="https://github.com/PabloSarro" target="_blank" rel="noopener noreferrer">github.com/PabloSarro</a></span>
+                </li>
+            </ul>
         </section>
 
     </main>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="year"></span> Pablo Sarró Sánchez</p>
+    </footer>
 
     <script src="js/script.js"></script>
 </body>

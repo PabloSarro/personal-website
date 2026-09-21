@@ -1,6 +1,16 @@
 .vscode/
 .DS_Store
 
-# Images
+# Images (tracked — do not ignore; site relies on committed images)
 # *.jpg
-*.jpeg
+# *.jpeg
+
+# Claude Code / Impeccable tooling — local dev aids, not part of the published site.
+# reports/*.pdf is intentionally NOT here: it's linked from the live Projects tab.
+.claude/
+.agents/
+.mcp.json
+skills-lock.json
+.impeccable/
+PRODUCT.md
+DESIGN.md
