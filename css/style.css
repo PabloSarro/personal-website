@@ -296,6 +296,33 @@ a:focus-visible {
     flex: 1;
 }
 
+.project-card .project-meta {
+    font-size: 0.85rem;
+    flex: 0;
+    margin: -4px 0 8px;
+}
+
+.project-details {
+    margin-bottom: 16px;
+    color: var(--text-muted);
+    font-size: 0.92rem;
+}
+
+.project-details summary {
+    cursor: pointer;
+    color: var(--accent);
+    font-weight: 400;
+}
+
+.project-details ul {
+    margin: 8px 0 0;
+    padding-left: 18px;
+}
+
+.project-details li + li {
+    margin-top: 4px;
+}
+
 .tag-list {
     list-style: none;
     display: flex;
@@ -389,6 +416,27 @@ a:focus-visible {
     border: 1px solid var(--border);
     border-radius: var(--radius);
     padding: 16px 20px;
+}
+
+.prize-item {
+    align-items: flex-start;
+}
+
+.prize-item h3 {
+    margin: 0 0 2px;
+    font-size: 1.05rem;
+}
+
+.prize-item p {
+    margin: 0;
+}
+
+.prize-item .timeline-meta {
+    margin-bottom: 6px;
+}
+
+.prize-item .prize-icon {
+    margin-top: 4px;
 }
 
 .prize-icon {
