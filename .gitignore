@@ -6,13 +6,13 @@
 # *.jpeg
 
 # Claude Code / Impeccable tooling — local dev aids, not part of the published site.
-# reports/*.pdf is intentionally NOT here: it's linked from the live Projects tab.
 .claude/
 .agents/
 .mcp.json
 skills-lock.json
 .impeccable/
-PRODUCT.md
-DESIGN.md
+info/
+docs/
 # Playwright CLI output (may contain credentials)
 .playwright-cli/
+.playwright/
